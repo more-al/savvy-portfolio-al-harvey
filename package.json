@@ -1,0 +1,24 @@
+{
+  "name": "AlHarvey",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/more-al/savvy-portfolio-al-harvey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/more-al/savvy-portfolio-al-harvey/issues"
+  },
+  "homepage": "https://github.com/more-al/savvy-portfolio-al-harvey#readme",
+  "devDependencies": {
+    "eslint": "^5.12.1",
+    "parcel-bundler": "^1.11.0"
+  }
+}
