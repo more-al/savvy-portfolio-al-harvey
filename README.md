@@ -8,5 +8,5 @@ I'm currently a Site Support Techinician for Bayer. Looking to get great at codi
 
 
 
-[Github](https://github.com/more-al)
-[LinkedIn](https://www.linkedin.com/in/al-harvey-jr-18321910a/)
+1. [Github](https://github.com/more-al)
+2. [LinkedIn](https://www.linkedin.com/in/al-harvey-jr-18321910a/)
