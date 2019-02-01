@@ -12,24 +12,7 @@
 
 #content {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
 }
 
-* {
-    border: 5px white;
-}
 
-h1 {
-    margin-left: 120px
-}
-
-h2 {
-    margin-left: 120px
-}
-
-.center {
-    margin-left: 100px;
-}
-
-.container {
-    width: 960px
-}
