@@ -15,4 +15,15 @@
     margin: 0 auto;
 }
 
+li {
+    display: inline;
+    margin: 5px;
+}
 
+li:first-child {
+    margin-right: 50px;
+}
+
+ul {
+    padding: 0;
+}
