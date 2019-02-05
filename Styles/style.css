@@ -3,16 +3,16 @@
 
 }
 
-.black {
-    background-color: black;
-}
-
 .red {
     background-color: red
 }
 
 .white {
     color: white;
+}
+
+.black {
+    background-color: black;
 }
 
 
@@ -40,4 +40,10 @@ li:hover {
 
 label {
     color: black
+}
+
+.container {
+    background: purple;
+    margin: auto;
+    width: 960px;
 }
