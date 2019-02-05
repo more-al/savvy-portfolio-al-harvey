@@ -15,9 +15,6 @@
     color: white;
 }
 
-#content {
-
-}
 
 li {
     display: inline;
@@ -38,5 +35,5 @@ ul {
 }
 
 li:hover {
-    background: white
+    background: purple;
 }
