@@ -37,3 +37,7 @@ ul {
 li:hover {
     background: purple;
 }
+
+label {
+    color: black
+}
