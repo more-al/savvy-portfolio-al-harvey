@@ -1,49 +1,87 @@
 * {
-  text-decoration: none;
-
-}
-
-.red {
-    background-color: red
-}
-
-.white {
-    color: white;
-}
-
-.black {
-    background-color: black;
-}
-
-
-li {
-    display: inline;
-    margin: 5px;
-}
-
-li:first-child {
-    margin-right: 50px;
-}
-
-ul {
+    margin: 0;
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: gray;
+    font-size: 20px;
+}
+
+h3:first-of-type {
+    margin-top: 10px;
+}
+
+hr {
+    margin: 20px 0;
+}
+
+figure {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    text-indent: 10px;
+}
+
+p:not(:first-of-type) {
+    margin: 10px 5px;
+}
+
+#navigation {
+    background: red;
+    padding: 16px;
+    text-transform: uppercase;
+}
+
+#navigation a {
+    display: inline-block;
+    /* We need block or inline-block to have some properties like 'min-width' to have any effect. /
+    min-width: 48px;
+  }
+  
+  #navigation li {
+    display: inline;
+    margin-right: 25px;
+    text-decoration: none;
+  }
+  
+  #header {
+    color: chartreuse;
+    padding: 10px 0;
+  }
+  
+  #content {
+    background: whitesmoke;
+    / padding: 10px 0; */
+}
+
 .flt-lft {
-    float: right;
-    margin: 100px;
-}
-
-li:hover {
-    background: purple;
-}
-
-label {
-    color: black
+    float: left;
+    margin-right: 20px;
 }
 
 .container {
-    background: purple;
     margin: auto;
     width: 960px;
+}
+
+.container>div {
+    padding-top: 10px;
+}
+
+li:hover {
+    background: black;
+}
+
+.white{
+    color: white;
 }
