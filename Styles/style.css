@@ -4,7 +4,7 @@
 }
 
 a {
-    text-decoration: none;
+    text-decoration-line: underline;
 }
 
 body {
@@ -26,6 +26,7 @@ figure {
 
 ul {
     list-style: none;
+    
 }
 
 ul li {
@@ -38,30 +39,49 @@ p:not(:first-of-type) {
 
 #navigation {
     background: red;
-    padding: 16px;
+    padding: 10px;
+    position: fixed;
     text-transform: uppercase;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
-#navigation a {
-    display: inline-block;
-    /* We need block or inline-block to have some properties like 'min-width' to have any effect. /
-    min-width: 48px;
-  }
-  
-  #navigation li {
+#navigation li {
+    display: block;
+}
+
+#navigation > ul > li, 
+#footer li {
     display: inline;
-    margin-right: 25px;
-    text-decoration: none;
-  }
-  
-  #header {
-    color: chartreuse;
-    padding: 10px 0;
-  }
-  
-  #content {
-    background: whitesmoke;
-    / padding: 10px 0; */
+    padding: 5px;
+}
+
+#navigation > ul > li {
+    position: relative;
+}
+
+#header {
+    background-color: Gray;
+    padding-top: 191px;
+}
+
+#navigation > ul > li > ul {
+    background-color:green;
+    display: none;
+    left: 0px;
+    position: absolute;
+    top: 32px;
+}
+
+#navigation > ul > li:hover > ul {
+    display: block;
+}
+
+
+
+img {
+    height: 400px;
 }
 
 .flt-lft {
@@ -82,6 +102,7 @@ li:hover {
     background: black;
 }
 
-.white{
+.white {
     color: white;
 }
+
