@@ -4,7 +4,8 @@
 }
 
 a {
-    text-decoration-line: underline;
+    text-decoration: none;
+    color: white;
 }
 
 body {
@@ -63,11 +64,11 @@ p:not(:first-of-type) {
 
 #header {
     background-color: Gray;
-    padding-top: 191px;
+    padding-top: 41px;
 }
 
 #navigation > ul > li > ul {
-    background-color:green;
+    background-color: white;
     display: none;
     left: 0px;
     position: absolute;
@@ -106,3 +107,6 @@ li:hover {
     color: white;
 }
 
+#content {
+    margin-top: 56px;
+}

@@ -9,16 +9,24 @@
     <link rel="stylesheet" href="../Styles/style.css">
 </head>
 
-<div id="navigation">
-    <ul class="container">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="../Blog/index.html">Blog</a></li>
-        <li><a href="../Contact/index.html">Contact</a></li>
-    </ul>
-</div>
-
 <body class="red">
-    <form class="container" action="https://formspree.io/alharvey789@gmail.com" method="POST" />
+<div id="navigation">
+        <ul class="container">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/Blog/index.html">Blog</a></li>
+                <li><a href="/Contact/index.html">Contact</a></li>
+                <li><a href="/Projects/index.html">Projects</a>
+                    <ul>
+                        <li><a href="">First</a></li>
+                        <li><a href="">Second</a></li>
+                        <li><a href="">Third</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+<div id="content">
+<form class="container" action="https://formspree.io/alharvey789@gmail.com" method="POST" />
 
     <label for="fname">First Name</label>
     <input type="text" name="fname" id="fname" required>
@@ -38,4 +46,5 @@
 
     <input type="reset" value="Clear">
     </form>
+    </div>
 </body>
