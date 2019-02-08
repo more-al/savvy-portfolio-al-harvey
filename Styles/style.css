@@ -5,12 +5,19 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: black;
 }
 
 body {
     background-color: gray;
     font-size: 20px;
+    display: grid;
+    grid-template-rows: min-content min-content auto min-content;
+    min-height: 100vh;
+}
+
+figure {
+    text-align: center;
 }
 
 h3:first-of-type {
@@ -21,13 +28,9 @@ hr {
     margin: 20px 0;
 }
 
-figure {
-    text-align: center;
-}
 
 ul {
     list-style: none;
-    
 }
 
 ul li {
@@ -41,7 +44,7 @@ p:not(:first-of-type) {
 #navigation {
     background: red;
     padding: 10px;
-    position: fixed;
+    position: sticky;
     text-transform: uppercase;
     top: 0;
     left: 0;
@@ -52,22 +55,20 @@ p:not(:first-of-type) {
     display: block;
 }
 
-#navigation > ul > li, 
-#footer li {
+#navigation>ul>li, #footer li {
     display: inline;
     padding: 5px;
 }
 
-#navigation > ul > li {
+#navigation>ul>li {
     position: relative;
 }
 
 #header {
-    background-color: Gray;
-    padding-top: 41px;
+    background-color: gray;
 }
 
-#navigation > ul > li > ul {
+#navigation>ul>li>ul {
     background-color: white;
     display: none;
     left: 0px;
@@ -75,11 +76,9 @@ p:not(:first-of-type) {
     top: 32px;
 }
 
-#navigation > ul > li:hover > ul {
+#navigation>ul>li:hover>ul {
     display: block;
 }
-
-
 
 img {
     height: 400px;
@@ -100,7 +99,7 @@ img {
 }
 
 li:hover {
-    background: black;
+    background: red;
 }
 
 .white {
