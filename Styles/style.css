@@ -28,7 +28,6 @@ hr {
     margin: 20px 0;
 }
 
-
 ul {
     list-style: none;
 }
@@ -41,23 +40,36 @@ p:not(:first-of-type) {
     margin: 10px 5px;
 }
 
+#footer {
+    grid-area: footer;
+}
+
 #navigation {
     background: red;
+    grid-area: navigation;
     padding: 10px;
     position: sticky;
     text-transform: uppercase;
     top: 0;
     left: 0;
-    width: 100%;
 }
 
 #navigation li {
     display: block;
 }
 
+#navigation>ul {
+    display: flex;
+    justify-content: space-around;
+    height: 30vh;
+}
+
 #navigation>ul>li, #footer li {
-    display: inline;
     padding: 5px;
+}
+
+footer li {
+    display: inline;
 }
 
 #navigation>ul>li {
@@ -66,6 +78,7 @@ p:not(:first-of-type) {
 
 #header {
     background-color: gray;
+    grid-area: header;
 }
 
 #navigation>ul>li>ul {
@@ -90,8 +103,8 @@ img {
 }
 
 .container {
-    margin: auto;
-    width: 960px;
+    margin: 0 auto;
+    max-width: 960px;
 }
 
 .container>div {
@@ -108,4 +121,19 @@ li:hover {
 
 #content {
     margin-top: 56px;
+    grid-area: content;
+}
+
+@media(min-width: 800px) {
+    body {
+        grid-template-areas: "navigation  header" "navigation  content" "sidebar  footer";
+        grid-template-rows: min-content auto min-content;
+        grid-template-columns: minmax(min-content, 15vw) auto;
+    }
+
+    #navigation > ul {
+        flex-direction: column;
+    }
+}
+
 }
