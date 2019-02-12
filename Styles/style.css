@@ -32,6 +32,7 @@ hr {
     margin: 20px 0;
 }
 
+
 ul {
     list-style: none;
 }
@@ -120,6 +121,8 @@ li:hover {
 
 .white {
     color: white;
+    list-style: none;
+    display: inline;
 }
 
 #content {
