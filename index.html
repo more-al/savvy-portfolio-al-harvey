@@ -8,9 +8,10 @@
     <title>Al's Savvy Coder Website</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="Styles/style.css">
-    
+
 </head>
 
 <body>
@@ -63,6 +64,22 @@
             <a href="https://github.com/more-al"><i class="fab fa-github"></i> GitHub</a>
         </li>
     </div>
+    <script type="text/javascript">
+        var name = prompt("What is your name?");
+
+        var checkName = function () {
+            if (name === "") {
+                name = prompt("What is your name, for real this time?");
+
+                checkName();
+            }
+        };
+
+        checkName();
+
+        alert("Hello " + name);
+    </script>
+
 </body>
 
 </html>
