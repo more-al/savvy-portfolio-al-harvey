@@ -10,7 +10,7 @@ a {
 
 body {
     background-color: gray;
-    font-size: 20px;
+    font-size: 30px;
     display: grid;
     grid-template-rows: min-content min-content auto min-content;
     grid-template-areas: "navigation" "header" "content" "footer";
