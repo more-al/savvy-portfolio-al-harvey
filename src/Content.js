@@ -1,4 +1,5 @@
-export default `
+export default function Content(){
+    return `
     <div id="content">
     <div class="container">
         <p class="white">I'm currently a Site Support Techinician for Bayer. Looking to get great at
@@ -16,3 +17,4 @@ export default `
     </div>
     </div>
 `;
+}

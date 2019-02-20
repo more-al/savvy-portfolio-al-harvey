@@ -1,4 +1,5 @@
-export default `
+export default function Footer(){
+    return `
     <div id="footer">
     <li class="white">
         <a href="https://www.linkedin.com/in/al-harvey-jr-18321910a/"><i class="fab fa-linkedin"></i>LinkedIn</a>
@@ -9,3 +10,4 @@ export default `
     </li>
     </div>
 `;
+}

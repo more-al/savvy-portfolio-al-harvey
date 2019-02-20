@@ -1,4 +1,5 @@
-export default `
+export default function Header(){
+    return `
     <div id="header">
             <h1 class="whitenoinline barcode">Welcome To My Portfolio</h1>
             <h2 class="whitenoinline barcode">Feel free to take a look around</h2>
@@ -8,3 +9,4 @@ export default `
             </figure>
         </div>
     `;
+}
