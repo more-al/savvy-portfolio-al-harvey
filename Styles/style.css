@@ -8,7 +8,7 @@ a {
     color: black;
 }
 
-body {
+#root {
     background-color: gray;
     font-size: 30px;
     display: grid;
@@ -143,7 +143,7 @@ li:hover {
 }
 
 @media(min-width: 800px) {
-    body {
+    #root {
         grid-template-areas: "navigation  header" "navigation  content" "navigation  footer";
         grid-template-rows: min-content auto min-content;
         grid-template-columns: minmax(min-content, 15vw) auto;
