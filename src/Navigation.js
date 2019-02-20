@@ -1,7 +1,7 @@
 export default `
     <div id="navigation">
     <ul class="container">
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="./.">Home</a></li>
         <li><a href="./Blog/.">Blog</a></li>
         <li><a href="./Contact/.">Contact</a></li>
         <li><a href="./Projects/.">Projects</a>
