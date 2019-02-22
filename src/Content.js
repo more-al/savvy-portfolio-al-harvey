@@ -1,5 +1,6 @@
 export default function Content(){
     return `
+    <button id="test">Click Me!</button>
     <div id="content">
     <div class="container">
         <p class="white">I'm currently a Site Support Techinician for Bayer. Looking to get great at
