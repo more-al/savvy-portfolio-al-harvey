@@ -5,15 +5,19 @@ import Navigation from './src/Navigation';
 
 var State = {
     'Home': {
+        'links': [ 'Blog', 'Contact', 'Projects' ],
         'title': 'Wecome to My Savvy Coder Website'
     },
     'Blog': {
+        'links': [ 'Home', 'Contact', 'Projects' ],
         'title': 'Thoughts that aren\'t on paper'
     },
     'Contact': {
+        'links': [ 'Home', 'Blog', 'Projects' ],
         'title': 'Speak to me'
     },
     'Projects': {
+        'links': [ 'Home', 'Contact', 'Blog' ],
         'title': 'Cool stuff I\'m doing'
     }
 
@@ -21,10 +25,17 @@ var State = {
 
 
 var root = document.querySelector('#root');
+var render;
 
+function navHandler(event){
+    event.preventDefault();
+    
+    render(State[event.target.textContent]);
+}
 
-function render(state){
+render = function render(state){
     var links;
+    var i = 0;
 
     root.innerHTML = ` 
     ${Navigation(state)}
@@ -36,19 +47,10 @@ function render(state){
 
     links = document.querySelectorAll('#navigation > ul > li > a');
 
-    links[0].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
+    while(i < links.length){
+        links[i].addEventListener('click', navHandler);
 
-    links[1].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
-
-    links[2].addEventListener('click', (event) => {
-        event.preventDefault();
-        render(State[event.target.textContent]);
-    });
-}
+        i++;
+    }
+};
 render(State.Home);
