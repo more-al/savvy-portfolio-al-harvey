@@ -2,6 +2,7 @@ import Content from './src/Content';
 import Footer from './src/Footer';
 import Header from './src/Header';
 import Navigation from './src/Navigation';
+import { startCase } from 'lodash';
 
 var State = {
     'Home': {
@@ -27,10 +28,12 @@ var State = {
 var root = document.querySelector('#root');
 var render;
 
-function navHandler(event){
-    event.preventDefault();
+function handleNavigation(event){
+    var destination = lodash.startCase(event.target.textcontent);
     
-    render(State[event.target.textContent]);
+    event.preventDefault();
+
+    render(State[destination]);
 }
 
 render = function render(state){
@@ -48,7 +51,7 @@ render = function render(state){
     links = document.querySelectorAll('#navigation > ul > li > a');
 
     while(i < links.length){
-        links[i].addEventListener('click', navHandler);
+        links[i].addEventListener('click', handleNavigation);
 
         i++;
     }
