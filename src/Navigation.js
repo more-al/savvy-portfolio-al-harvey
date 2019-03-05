@@ -1,13 +1,13 @@
-function linkBuilder(linksArr){
+function buildLinks(links){
     var i = 0;
-    var linksHTML = '';
+    var linkList = '';
 
-    while(i < linksArr.length){
-        linksHTML += `<li><a href="./${linksArr[i]}">${linksArr[i]}</a></li>`;
+    while(i < links.length){
+        linkList += `<li><a data-navigo href="./${links[i]}">${links[i]}</a></li>`;
         i++;
     }
     
-    return linksHTML;
+    return linkList;
 }
 
 
@@ -15,7 +15,7 @@ export default function Navigation(state){
     return `
     <div id="navigation">
     <ul class="container">
-    ${linkBuilder(state.links)}
+    ${buildLinks(state.links)}
     </ul>
     </div>
 `;
