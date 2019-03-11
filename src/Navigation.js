@@ -1,23 +1,39 @@
 import { lowerCase } from 'lodash';
 
 function buildLinks(linkArray){
-    var linkList = '';
-    var destination = '';
+    var linkList = linkArray.map((link) => {
+        var destination = '';
 
-    linkArray.forEach((link) => {
         if(link !== 'Home'){
             destination = lowerCase(link);
         }
 
-        linkList += `
-            <li>
-                <a data-navigo href="./${destination}">
-                ${link}
-                </a>
-            </li>
-            `;
-    });
+        return `<li>
+        <a data-navigo href="./${destination}">
+        ${link}
+        </a>
+        </li>
+        `;
+    }).join(' ');
 
+    
+    // linkArray.forEach((link) => {
+    //     if(link !== 'Home'){
+    //         destination = lowerCase(link);
+    //     }
+        
+    //     linkList += `
+    //     <li>
+    //     <a data-navigo href="./${destination}">
+    //     ${link}
+    //     </a>
+    //     </li>
+    //     `;
+    // });
+    console.log(typeof linkList);
+
+    console.log(linkList);
+    
     return linkList;
 }
 
