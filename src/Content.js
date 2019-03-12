@@ -1,4 +1,6 @@
 export default function Content(posts){
+    console.log('content says', posts);
+    
     return `
     <button id="test">Click Me!</button>
     <div id="content">

@@ -19,7 +19,6 @@ function render(state){
             .get('https://jsonplaceholder.typicode.com/posts')
             .then((response) => {
                 state.posts = response.data;
-                console.log(state.posts);
             });
     }
 
