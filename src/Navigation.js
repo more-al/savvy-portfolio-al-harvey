@@ -30,9 +30,7 @@ function buildLinks(linkArray){
     //     </li>
     //     `;
     // });
-    console.log(typeof linkList);
-
-    console.log(linkList);
+   
     
     return linkList;
 }

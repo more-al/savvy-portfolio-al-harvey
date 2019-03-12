@@ -31,3 +31,7 @@ router
     .on('/:page', handleNavigation)
     .on('/', () => handleNavigation({ 'page': 'Home' }))
     .resolve();
+
+console.log('hello');
+
+fetch('https://jsonplaceholder.typicode.com/posts').then((response) => response.json()).then((json) => console.log(json));
