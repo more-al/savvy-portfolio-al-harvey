@@ -12,7 +12,7 @@ var root = document.querySelector('#root');
 
 function render(state){
     root.innerHTML = ` 
-    ${Navigation(state)}
+    ${Navigation(state.links)}
     ${Header(state.title)}
     ${Content(state)}
     ${Footer(state)}

@@ -38,11 +38,11 @@ function buildLinks(linkArray){
 }
 
 
-export default function Navigation(state){
+export default function Navigation(links){
     return `
     <div id="navigation">
     <ul class="container">
-    ${buildLinks(state.links)}
+    ${buildLinks(links)}
     </ul>
     </div>
 `;
