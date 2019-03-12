@@ -12,10 +12,21 @@ var root = document.querySelector('#root');
 
 
 function render(state){
+    if(!state.links.includes('Blog')){
+        state.posts = [];
+
+        axios
+            .get('https://jsonplaceholder.typicode.com/posts')
+            .then((response) => {
+                state.posts = response.data;
+                console.log(state.posts);
+            });
+    }
+
     root.innerHTML = ` 
     ${Navigation(state.links)}
     ${Header(state.title)}
-    ${Content(state)}
+    ${Content(state.posts)}
     ${Footer(state)}
     `;
 
@@ -32,7 +43,3 @@ router
     .on('/:page', handleNavigation)
     .on('/', () => handleNavigation({ 'page': 'Home' }))
     .resolve();
-
-// fetch('https://jsonplaceholder.typicode.com/posts').then((response) => response.json()).then((json) => console.log(json));
-
-axios.get('https://jsonplaceholder.typicode.com/posts').then((response) => console.log(response.data));

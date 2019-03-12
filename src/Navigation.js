@@ -16,22 +16,7 @@ function buildLinks(linkArray){
         `;
     }).join(' ');
 
-    
-    // linkArray.forEach((link) => {
-    //     if(link !== 'Home'){
-    //         destination = lowerCase(link);
-    //     }
-        
-    //     linkList += `
-    //     <li>
-    //     <a data-navigo href="./${destination}">
-    //     ${link}
-    //     </a>
-    //     </li>
-    //     `;
-    // });
-   
-    
+
     return linkList;
 }
 

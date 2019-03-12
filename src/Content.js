@@ -1,4 +1,4 @@
-export default function Content(){
+export default function Content(posts){
     return `
     <button id="test">Click Me!</button>
     <div id="content">
