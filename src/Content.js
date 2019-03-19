@@ -1,8 +1,7 @@
 export default function Content(posts){
     console.log('content says', posts);
     
-    return `
-    <button id="test">Click Me!</button>
+    return ` 
     <div id="content">
     <div class="container">
         <p class="white">I'm currently a Site Support Techinician for Bayer. Looking to get great at
